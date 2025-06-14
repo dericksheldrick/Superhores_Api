@@ -23,9 +23,12 @@ This is builted with Flask for tracking superheroes and their powers. It's part 
         │
         ├── app.py
         ├── models.py
-        ├── config.py
         ├── seed.py
         ├── migrations/
+        │
+        │
+        ├── Instance/
+        │
         │
         ├── README.md
         └── requirements.txt
