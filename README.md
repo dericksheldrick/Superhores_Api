@@ -18,7 +18,7 @@ This is builted with Flask for tracking superheroes and their powers. It's part 
 ---
 
 ## Project Structure
-    ```
+    
         project-root/
         │
         ├── app.py
@@ -29,7 +29,7 @@ This is builted with Flask for tracking superheroes and their powers. It's part 
         │
         ├── README.md
         └── requirements.txt
-    ```
+    
 
 ---
 
@@ -71,20 +71,23 @@ flask run
 ```
 
 ## Postman Collection 
-Test the Api with the postman:
+Test the Api with postman:
 - Open Postman 
 - Click on import > upload file 
 - Select the ```challenge-2-superheroes.postman_collection.json``` file
-- start testing the routes
+- Start testing the routes
 
 ### API Endpoints Summary
-Method	             Route	                   Description
-GET	                 ```/heroes```             List all heroes
-GET	                 ```/heroes/<id>```	       Get a specific hero + their powers
-GET	                 ```/powers```             List all powers
-GET	                 ```/powers/<id>```	       Get a specific power
-PATCH                ```/powers/<id>```	       Update a power's description
-POST	             ```/hero_powers```	       Assign a power to a hero
+
+| Method | Route          | Description                        |
+| ------ | -------------- | ---------------------------------- |
+| GET    | `/heroes`      | List all heroes                    |
+| GET    | `/heroes/<id>` | Get a specific hero + their powers |
+| GET    | `/powers`      | List all powers                    |
+| GET    | `/powers/<id>` | Get a specific power               |
+| PATCH  | `/powers/<id>` | Update a power's description       |
+| POST   | `/hero_powers` | Assign a power to a hero           |
+
 
 ## Validations
 * ```HeroPower.strength``` must be one of 'Stromg', 'Weak', 'Average'
